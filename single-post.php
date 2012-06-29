@@ -19,6 +19,7 @@
 			//print_r($match);
 			
 		?>
+		<!--
     	<div id="nav">
 			<a href="#head" title="このページの一番上にジャンプします" class="nav_head">▲</a>
 			<?php
@@ -32,6 +33,8 @@
 			?>
 			<a href="#fotter" class="nav_bottom">▼</a>
         </div>
+        -->
+        
 	    <div id="colum_back"></div>
         <div id="colum_lines">
         	<li class="left"></li>
@@ -40,7 +43,7 @@
         <div class="post">
 	    	<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
 	    	<?php the_content(); ?>
-	    	<?php echo get_the_date('Y年Fd日 l'); the_time(); ?>
+	    	<p class="data"><?php echo get_the_date('Y年Fd日 l'); the_time(); ?></p>
     	</div>
     	<?php endif; ?>
    	</div>

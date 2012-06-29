@@ -6,7 +6,7 @@
 ?>
 <link rel="alternate" type="application/rss+xml" title="RSS フィード" href="<?php bloginfo('rss2_url'); ?>" />
 <?php 
-	/* jQuery使用の為の準備的な何か */
+	/* jQuery使用の為のコリジョン防止的な何か */
 	wp_deregister_script('jquery');
 	wp_enqueue_script('jquery', 'http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js',array(), '1.7.1');
 ?>

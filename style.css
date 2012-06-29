@@ -51,8 +51,10 @@ div#header{
 }
 div#header h1{
 	font-family:'ヒラギノ角ゴ Pro W6','ＭＳ ゴシック';
+	text-shadow: 4px 4px 0px #ddd, 2px 2px 0px #ccc;
 }
 div#header h1 a{
+	color: #aaa;
 	text-decoration:none;
 }
 div#headmargin{
@@ -200,7 +202,7 @@ div#content div#colum_lines li.line2{
 #content div.post_collums div.post_one_col{
 	float:left;
 	width:288px;
-	height:330px;
+	height:400px;
 	padding:0 5px;
 	border-radius:5px;
 	margin-right:20px;
@@ -294,6 +296,91 @@ div#content div#colum_lines li.line2{
 	border-bottom:solid 2px #999;
 	background-image:url(img/test.png);
 }
+#content .post img{
+	border: solid 1px #aaaaaa;
+}
+
+#content p.data{
+	border-top:dotted 1px #999;
+	padding-top:10px;
+	text-align:right;
+	color:#6666CC;
+}
+
+/*Githubボタン*/
+#content .post a.github{
+	display:inline-block;
+	width:150px;
+	height: 56px;
+	margin: 20px 0;
+	background-position:0 0;
+	background-image:url(img/github_button.png);
+}
+#content .post a.github:hover{
+	background-position:150px 0;
+}
+#content .post a.github span{
+	visibility:hidden;
+}
+
+/* 画像の枠(table) */
+#content .post table.colum2{
+	width: 900px;
+	border: solid 1px #aaaaaa;
+	border-top: none;
+	margin: 5px 0 5px 9px;
+}
+#content .post table.colum2 td{
+	width: 440px;
+	padding: 5px;
+	text-align: center;
+	border-top: solid 1px #aaaaaa;
+	border-bottom: solid 1px #aaaaaa;
+}
+#content .post table.colum2 td.caption{
+	border: none;
+}
+#content .post table.colum2 td.rightbox{
+	border-left: solid 1px #aaaaaa;
+}
+
+/* キャプションスタイル */
+#content .post div.wp-caption{
+	width: 300px;
+	border: solid 1px #aaaaaa;
+	text-align: center;
+	padding: 5px 0;
+	margin-bottom:10px;
+}
+#content .post div.wp-caption img{
+	border: solid 1px #aaaaaa;
+}
+#content .post div.wp-caption p{
+	padding: 5px 0;
+	margin:0;
+}
+/* 画像の枠(div) */
+#content .post div.postgallery{
+	width:900px;
+	padding: 3px 0;
+}
+#content .post div.postgallery img{
+	border: none;
+}
+#content .post div.postgallery div{
+	height: 300px;
+	width: 300px;
+}
+#content .post div.postgallery div.leftcolum{
+	float: left;
+}
+#content .post div.postgallery div.centercolum{
+	margin-left: 305px;
+}
+#content .post div.postgallery div.rightcolum{
+	margin-left: 610px;
+}
+
 
 #content .post div.siteinfobox{
 	width:920px;
@@ -313,7 +400,6 @@ div#content div#colum_lines li.line2{
 	float:left;
 	width:410px;
 	height:300px;
-	padding:30px 0 20px;
 	text-align:center;
 }
 #content .post div.siteinfobox div.imagebox a{
@@ -370,7 +456,6 @@ div#contentmargin{
 /******************************************************/
 div#footer{
 	width:100%;
-	height:500px;
 	/*border-top:solid 1px #fff;*/
 }
 #footer div#footer_content{
@@ -385,6 +470,7 @@ div#footer{
 	height:0;
 	clear:both;
 }
+
 /******************************************************
  					フッターバー
 /******************************************************/
@@ -393,17 +479,29 @@ div#footer_content li.widget{
 	width:300px;
 	padding:10px 0;
 }
-div#footer_content li.widget li{
-	padding-left:20px;
+/* ウィジェット */
+div#footer_content li.widget a{
+	color:#09C;
+	text-decoration:none;
 }
-div#footer_content  h2.widgettitle{
+div#footer_content li.widget a:hover{
+	color:#F60;
+	text-decoration:underline;
+}
+div#footer_content li.widget ul{
+	list-style:none;
+} 
+div#footer_content li.widget li{
+	padding-left:10px;
+	margin-bottom:5px;
+}
+div#footer_content h2.widgettitle{
 	color:#000;
 	font-size:1.2em;
 	font-weight:600;
 	padding: 2px 0 5px 10px;
 	margin-bottom:10px;
-	border-left:double 5px #888;
-	border-bottom:double 3px #666;
+	border-bottom:double 2px #aaa;
 	/*
 	background-color:#666;
 	*/
@@ -421,5 +519,4 @@ div#footer_content li.widget_categories{
  */
 #content h2.notpage{
 	padding:15px;
-}
 }

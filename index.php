@@ -11,10 +11,12 @@
     <div id="headmargin"></div>
     <div id="content">
     	<?php if(have_posts()): ?>
+    	<!--
 		<div id="nav">
 			<a href="#head" class="head">▲</a>
 			<a href="#fotter" class="bottom">▼</a>
         </div>
+       -->
     	<!-- 背景グりットカラム -->
         <div id="colum_back"></div>
     	<div id="colum_lines">
