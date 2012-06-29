@@ -19,7 +19,7 @@
 			//print_r($match);
 			
 		?>
-		<!--
+		<!--　固定ナビゲーション試行中
     	<div id="nav">
 			<a href="#head" title="このページの一番上にジャンプします" class="nav_head">▲</a>
 			<?php
@@ -41,7 +41,7 @@
             <li class="right"></li>
         </div>
         <div class="post">
-	    	<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+	    	<h2><?php the_title(); ?></h2>
 	    	<?php the_content(); ?>
 	    	<p class="data"><?php echo get_the_date('Y年Fd日 l'); the_time(); ?></p>
     	</div>

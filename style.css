@@ -247,7 +247,7 @@ div#content div#colum_lines li.line2{
 	margin:0;
 	text-align:right;
 	position:absolute;
-	left:130px;
+	right:10px;
 	bottom:10px;
 }
 #content div.post_collums div.post_one_col a{
@@ -259,7 +259,7 @@ div#content div#colum_lines li.line2{
 	color:#F60;
 	text-decoration:underline;
 }
-/* シングルページ用 */
+/************** シングルページ用 *********************/
 #content .post{
 	width:918px;
 	background-color:#FFF;
@@ -272,6 +272,8 @@ div#content div#colum_lines li.line2{
     -moz-border-radius: 5px;
 }
 #content .post h2{
+	color: #aaa;
+	text-decoration:none;
 	font-size:24px;
 	padding:10px 0 8px 10px;
 	margin-bottom:20px;
@@ -280,10 +282,16 @@ div#content div#colum_lines li.line2{
 	border-left:solid 5px #999;
 	border-bottom:solid 2px #999;
 	background-image:url(img/test.png);
+	/*text-shadow: 4px 4px 0px #ddd, 2px 2px 0px #ccc;*/
 }
-#content .post h2 a{
+
+#content .post a{
 	color:#09C;
 	text-decoration:none;
+}
+#content .post a:hover{
+	color:#F60;
+	text-decoration:underline;
 }
 #content .post h3{
 	font-size:19px;
@@ -305,6 +313,9 @@ div#content div#colum_lines li.line2{
 	padding-top:10px;
 	text-align:right;
 	color:#6666CC;
+}
+#content .post img{
+	border: solid 1px #aaaaaa;
 }
 
 /*Githubボタン*/
@@ -450,6 +461,15 @@ div#contentmargin{
 	border-bottom-right-radius: 10px;
     -webkit-border-bottom-right-radius: 10px;
     -moz-border-bottom-right-radius: 10px;
+}
+
+/*
+ * wpテンプレートスタイル
+ */
+.aligncenter {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
 }
 /******************************************************
  					footer
